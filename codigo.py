@@ -41,40 +41,51 @@ time.sleep(1.5)
 import pandas
 
 tabela = pandas.read_csv("produtos.csv")
+print(tabela)
 # Passo 4: cadastrar 1 produto
+
 pyautogui.click(x=759, y=369)
 
+linha = 0
+
 #código
+codigo = tabela.loc[linha, "codigo"]
 pyautogui.write("codigo")
 pyautogui.press("tab")
 time.sleep(1)
 
 #marca
+codigo = tabela.loc[linha, "marca"]
 pyautogui.write("marca")
 pyautogui.press("tab")
 time.sleep(1)
 
 #tipo
+codigo = tabela.loc[linha, "tipo"]
 pyautogui.write("tipo")
 pyautogui.press("tab")
 time.sleep(1)
 
 #categoria
+codigo = tabela.loc[linha, "categoria"]
 pyautogui.write("categoria")
 pyautogui.press("tab")
 time.sleep(1)
 
 #preço unitário
+codigo = tabela.loc[linha, "preco_unitario"]
 pyautogui.write("preco unitario")
 pyautogui.press("tab")
 time.sleep(1)
 
 #custo
+codigo = tabela.loc[linha, "custo"]
 pyautogui.write("custo")
 pyautogui.press("tab")
 time.sleep(1)
 
 #obs
+codigo = tabela.loc[linha, "obs"]
 pyautogui.write("observacao")
 pyautogui.press("tab")
 time.sleep(1)
