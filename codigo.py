@@ -91,7 +91,8 @@ for linha in tabela.index:
 
     #obs
     obs = tabela.loc[linha, "obs"]
-    pyautogui.write(str(obs))
+    if not pandas.isna(obs):
+        pyautogui.write(str(obs))
     pyautogui.press("tab")
     time.sleep(1)
 
