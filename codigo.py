@@ -44,55 +44,60 @@ tabela = pandas.read_csv("produtos.csv")
 print(tabela)
 # Passo 4: cadastrar 1 produto
 
-pyautogui.click(x=759, y=369)
+
 
 linha = 0
+#para cada linha da tabela executar comandos
+for linha in tabela.index: 
+
+    pyautogui.click(x=759, y=369)#selecionar onde
 
 
-#código
-codigo = tabela.loc[linha, "codigo"]
-pyautogui.write(str(codigo))
-pyautogui.press("tab")
-time.sleep(1)
+    #código
+    codigo = tabela.loc[linha, "codigo"]
+    pyautogui.write(str(codigo))
+    pyautogui.press("tab")
+    time.sleep(1)
 
-#marca
-marca = tabela.loc[linha, "marca"]
-pyautogui.write(str(marca))
-pyautogui.press("tab")
-time.sleep(1)
+    #marca
+    marca = tabela.loc[linha, "marca"]
+    pyautogui.write(str(marca))
+    pyautogui.press("tab")
+    time.sleep(1)
 
-#tipo
-tipo = tabela.loc[linha, "tipo"]
-pyautogui.write(str(tipo))
-pyautogui.press("tab")
-time.sleep(1)
+    #tipo
+    tipo = tabela.loc[linha, "tipo"]
+    pyautogui.write(str(tipo))
+    pyautogui.press("tab")
+    time.sleep(1)
 
-#categoria
-categoria = tabela.loc[linha, "categoria"]
-pyautogui.write(str(categoria))
-pyautogui.press("tab")
-time.sleep(1)
+    #categoria
+    categoria = tabela.loc[linha, "categoria"]
+    pyautogui.write(str(categoria))
+    pyautogui.press("tab")
+    time.sleep(1)
 
-#preço unitário
-preco = tabela.loc[linha, "preco_unitario"]
-pyautogui.write(str(preco))
-pyautogui.press("tab")
-time.sleep(1)
+    #preço unitário
+    preco = tabela.loc[linha, "preco_unitario"]
+    pyautogui.write(str(preco))
+    pyautogui.press("tab")
+    time.sleep(1)
 
-#custo
-custo = tabela.loc[linha, "custo"]
-pyautogui.write(str(custo))
-pyautogui.press("tab")
-time.sleep(1)
+    #custo
+    custo = tabela.loc[linha, "custo"]
+    pyautogui.write(str(custo))
+    pyautogui.press("tab")
+    time.sleep(1)
 
-#obs
-obs = tabela.loc[linha, "obs"]
-pyautogui.write(str(obs))
-pyautogui.press("tab")
-time.sleep(1)
+    #obs
+    obs = tabela.loc[linha, "obs"]
+    pyautogui.write(str(obs))
+    pyautogui.press("tab")
+    time.sleep(1)
 
-#clicar no enviar
-pyautogui.press("enter")
-
+    #clicar no enviar
+    pyautogui.press("enter")
+    pyautogui.scroll(100000)
+    #pyautogui.click()
 
 # Passo 5: Repetir o processo de cadastro até acabar os produtos  
