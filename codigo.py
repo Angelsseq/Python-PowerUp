@@ -48,45 +48,46 @@ pyautogui.click(x=759, y=369)
 
 linha = 0
 
+
 #código
 codigo = tabela.loc[linha, "codigo"]
-pyautogui.write("codigo")
+pyautogui.write(str(codigo))
 pyautogui.press("tab")
 time.sleep(1)
 
 #marca
-codigo = tabela.loc[linha, "marca"]
-pyautogui.write("marca")
+marca = tabela.loc[linha, "marca"]
+pyautogui.write(str(marca))
 pyautogui.press("tab")
 time.sleep(1)
 
 #tipo
-codigo = tabela.loc[linha, "tipo"]
-pyautogui.write("tipo")
+tipo = tabela.loc[linha, "tipo"]
+pyautogui.write(str(tipo))
 pyautogui.press("tab")
 time.sleep(1)
 
 #categoria
-codigo = tabela.loc[linha, "categoria"]
-pyautogui.write("categoria")
+categoria = tabela.loc[linha, "categoria"]
+pyautogui.write(str(categoria))
 pyautogui.press("tab")
 time.sleep(1)
 
 #preço unitário
-codigo = tabela.loc[linha, "preco_unitario"]
-pyautogui.write("preco unitario")
+preco = tabela.loc[linha, "preco_unitario"]
+pyautogui.write(str(preco))
 pyautogui.press("tab")
 time.sleep(1)
 
 #custo
-codigo = tabela.loc[linha, "custo"]
-pyautogui.write("custo")
+custo = tabela.loc[linha, "custo"]
+pyautogui.write(str(custo))
 pyautogui.press("tab")
 time.sleep(1)
 
 #obs
-codigo = tabela.loc[linha, "obs"]
-pyautogui.write("observacao")
+obs = tabela.loc[linha, "obs"]
+pyautogui.write(str(obs))
 pyautogui.press("tab")
 time.sleep(1)
 
