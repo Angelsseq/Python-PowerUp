@@ -32,7 +32,7 @@ pyautogui.write("pythonimpressionador@gmail.com")
 
 pyautogui.press("tab") #tab sempre passa pra próxima aba do formulário
 time.sleep(1)
-pyautogui.write("senha")
+pyautogui.write("senha123456789")
 pyautogui.click(x=942, y=710)
 time.sleep(1.5)
 
@@ -41,6 +41,46 @@ time.sleep(1.5)
 import pandas
 
 tabela = pandas.read_csv("produtos.csv")
-
 # Passo 4: cadastrar 1 produto
+pyautogui.click(x=759, y=369)
+
+#código
+pyautogui.write("codigo")
+pyautogui.press("tab")
+time.sleep(1)
+
+#marca
+pyautogui.write("marca")
+pyautogui.press("tab")
+time.sleep(1)
+
+#tipo
+pyautogui.write("tipo")
+pyautogui.press("tab")
+time.sleep(1)
+
+#categoria
+pyautogui.write("categoria")
+pyautogui.press("tab")
+time.sleep(1)
+
+#preço unitário
+pyautogui.write("preco unitario")
+pyautogui.press("tab")
+time.sleep(1)
+
+#custo
+pyautogui.write("custo")
+pyautogui.press("tab")
+time.sleep(1)
+
+#obs
+pyautogui.write("observacao")
+pyautogui.press("tab")
+time.sleep(1)
+
+#clicar no enviar
+pyautogui.press("enter")
+
+
 # Passo 5: Repetir o processo de cadastro até acabar os produtos  
