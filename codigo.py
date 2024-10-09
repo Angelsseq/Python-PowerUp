@@ -21,7 +21,8 @@ pyautogui.click(x=624, y=442, button="left")
     
 
 #entrar no link https://dlp.hashtagtreinamentos.com/python/intensivao/login
-pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login")
+link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
+pyautogui.write(link)
 pyautogui.press("enter")
 
 # Passo 2: Fazer Login
@@ -39,7 +40,7 @@ time.sleep(1.5)
 #pip install pandas
 import pandas
 
-produtos.csv
+tabela = pandas.read_csv("produtos.csv")
 
 # Passo 4: cadastrar 1 produto
 # Passo 5: Repetir o processo de cadastro até acabar os produtos  
