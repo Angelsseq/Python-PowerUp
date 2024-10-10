@@ -35,7 +35,7 @@ pyautogui.write("pythonimpressionador@gmail.com")
 pyautogui.press("tab") #tab sempre passa pra próxima aba do formulário
 pyautogui.write("senha123456789")
 pyautogui.click(x=942, y=710)
-time.sleep(1.5)
+time.sleep(0.1)
 
 # Passo 3: Importar base de dados
 #pip install pandas
