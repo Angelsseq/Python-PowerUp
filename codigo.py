@@ -28,14 +28,14 @@ pyautogui.write(link)
 pyautogui.press("enter")
 
 # Passo 2: Fazer Login
-time.sleep(4) #dar uma pausa de x(4) segundos
+time.sleep(4.5) #dar uma pausa de x(4) segundos
 pyautogui.click(x=722, y=512)
 pyautogui.write("pythonimpressionador@gmail.com")
 
 pyautogui.press("tab") #tab sempre passa pra próxima aba do formulário
 pyautogui.write("senha123456789")
 pyautogui.click(x=942, y=710)
-time.sleep(0.5)
+time.sleep(1.5)
 
 # Passo 3: Importar base de dados
 #pip install pandas
