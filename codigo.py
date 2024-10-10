@@ -5,33 +5,34 @@ import time
 #pyautogui.write -> escrever um texto
 #pyautogui.click -> clicar com o  mouse
 #pyautogui.press -> apertar uma tecla
-
 # abrir o navegador
 # apertar a tecla windowns
-pyautogui.PAUSE = 0.5 #da uma pausa de meio segundo depois de cada ação
+###pyautogui.PAUSE = 0.5 #da uma pausa de meio segundo depois de cada ação
 
 pyautogui.press("win")
+time.sleep(0.4)
 pyautogui.write("chrome")
+time.sleep(0.5)
 pyautogui.press("enter")
-pyautogui.sleep(1)
+pyautogui.sleep(0.5)
 pyautogui.click(x=624, y=442, button="left")
 #while True:
 #    x, y = pyautogui.position() #obtem as cordenadas atuais do mouse
 #    print(f"posição do mouse: x={x}, y={y}")
     
-
+    
 #entrar no link https://dlp.hashtagtreinamentos.com/python/intensivao/login
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
+pyautogui.sleep(1)
 pyautogui.write(link)
 pyautogui.press("enter")
 
 # Passo 2: Fazer Login
-time.sleep(3) #dar uma pausa de 1.5 segundos
+time.sleep(4) #dar uma pausa de x(4) segundos
 pyautogui.click(x=722, y=512)
 pyautogui.write("pythonimpressionador@gmail.com")
 
 pyautogui.press("tab") #tab sempre passa pra próxima aba do formulário
-time.sleep(1)
 pyautogui.write("senha123456789")
 pyautogui.click(x=942, y=710)
 time.sleep(1.5)
@@ -57,47 +58,43 @@ for linha in tabela.index:
     codigo = tabela.loc[linha, "codigo"]
     pyautogui.write(str(codigo))
     pyautogui.press("tab")
-    time.sleep(0.5)
 
     #marca
     marca = tabela.loc[linha, "marca"]
     pyautogui.write(str(marca))
     pyautogui.press("tab")
-    time.sleep(0.01)
 
     #tipo
     tipo = tabela.loc[linha, "tipo"]
     pyautogui.write(str(tipo))
     pyautogui.press("tab")
-    time.sleep(0.01)
 
     #categoria
     categoria = tabela.loc[linha, "categoria"]
     pyautogui.write(str(categoria))
     pyautogui.press("tab")
-    time.sleep(00.01)
 
     #preço unitário
     preco = tabela.loc[linha, "preco_unitario"]
     pyautogui.write(str(preco))
-    pyautogui.press("tab")
-    time.sleep(0.01)
+    pyautogui.press("tab")  
 
     #custo
     custo = tabela.loc[linha, "custo"]
     pyautogui.write(str(custo))
     pyautogui.press("tab")
-    time.sleep(0.01)
 
-    #obspythonimpressionador@gmail.com  3
+    #obs  
     obs = tabela.loc[linha, "obs"]
     if not pandas.isna(obs):
         pyautogui.write(str(obs))
     pyautogui.press("tab")
-    time.sleep(1)    
+        
     #clicar no enviar
     pyautogui.press("enter")
+
+    #rolar a página para o topo novamente
     pyautogui.scroll(100000)
-    #pyautogui.click()
 
 # Passo 5: Repetir o processo de cadastro até acabar os produtos  
+#está acontecendo no if
