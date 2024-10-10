@@ -9,7 +9,7 @@ import time
 # apertar a tecla windowns
 ###pyautogui.PAUSE = 0.5 #da uma pausa de meio segundo depois de cada ação
 
-time.sleep(5) #use esse código caudo queira iniciar o processo apartir da area de trabalho
+#time.sleep(5) #use esse código caudo queira iniciar o processo apartir da area de trabalho
 pyautogui.press("win")
 time.sleep(0.4)
 pyautogui.write("chrome")
