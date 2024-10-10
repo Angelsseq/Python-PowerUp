@@ -26,7 +26,7 @@ pyautogui.write(link)
 pyautogui.press("enter")
 
 # Passo 2: Fazer Login
-time.sleep(1.5) #dar uma pausa de 1.5 segundos
+time.sleep(3) #dar uma pausa de 1.5 segundos
 pyautogui.click(x=722, y=512)
 pyautogui.write("pythonimpressionador@gmail.com")
 
@@ -57,45 +57,44 @@ for linha in tabela.index:
     codigo = tabela.loc[linha, "codigo"]
     pyautogui.write(str(codigo))
     pyautogui.press("tab")
-    time.sleep(1)
+    time.sleep(0.5)
 
     #marca
     marca = tabela.loc[linha, "marca"]
     pyautogui.write(str(marca))
     pyautogui.press("tab")
-    time.sleep(1)
+    time.sleep(0.01)
 
     #tipo
     tipo = tabela.loc[linha, "tipo"]
     pyautogui.write(str(tipo))
     pyautogui.press("tab")
-    time.sleep(1)
+    time.sleep(0.01)
 
     #categoria
     categoria = tabela.loc[linha, "categoria"]
     pyautogui.write(str(categoria))
     pyautogui.press("tab")
-    time.sleep(1)
+    time.sleep(00.01)
 
     #preço unitário
     preco = tabela.loc[linha, "preco_unitario"]
     pyautogui.write(str(preco))
     pyautogui.press("tab")
-    time.sleep(1)
+    time.sleep(0.01)
 
     #custo
     custo = tabela.loc[linha, "custo"]
     pyautogui.write(str(custo))
     pyautogui.press("tab")
-    time.sleep(1)
+    time.sleep(0.01)
 
-    #obs
+    #obspythonimpressionador@gmail.com  3
     obs = tabela.loc[linha, "obs"]
     if not pandas.isna(obs):
         pyautogui.write(str(obs))
     pyautogui.press("tab")
-    time.sleep(1)
-
+    time.sleep(1)    
     #clicar no enviar
     pyautogui.press("enter")
     pyautogui.scroll(100000)
