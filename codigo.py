@@ -1,5 +1,6 @@
+
 # Passo 1: Entrar no sistema da empresa - https://dlp.hashtagtreinamentos.com/python/intensivao/login
-#pip install pyautogui
+#pip install 
 import pyautogui
 import time
 #pyautogui.write -> escrever um texto
@@ -53,6 +54,7 @@ linha = 0
 #para cada linha da tabela executar comandos
 for linha in tabela.index: 
 
+    
     pyautogui.click(x=759, y=369)#selecionar onde
 
 
