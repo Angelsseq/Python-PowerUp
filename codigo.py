@@ -6,6 +6,7 @@ import time
 #pyautogui.write -> escrever um texto
 #pyautogui.click -> clicar com o  mouse
 #pyautogui.press -> apertar uma tecla
+
 # abrir o navegador
 # apertar a tecla windowns
 ###pyautogui.PAUSE = 0.5 #da uma pausa de meio segundo depois de cada ação
@@ -17,7 +18,7 @@ time.sleep(0.4)
 pyautogui.write("chrome")
 time.sleep(0.5)
 pyautogui.press("enter")
-pyautogui.sleep(0.5)
+pyautogui.sleep(1.5)
 pyautogui.click(x=624, y=442, button="left")
 #while True:
 #    x, y = pyautogui.position() #obtem as cordenadas atuais do mouse
@@ -26,18 +27,18 @@ pyautogui.click(x=624, y=442, button="left")
     
 #entrar no link https://dlp.hashtagtreinamentos.com/python/intensivao/login
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
-pyautogui.sleep(1)
+pyautogui.sleep(1.5)
 pyautogui.write(link)
 pyautogui.press("enter")
 
 # Passo 2: Fazer Login
 time.sleep(4.5) #dar uma pausa de x(4) segundos
-pyautogui.click(x=722, y=512)
-pyautogui.write("pythonimpressionador@gmail.com")
+pyautogui.click(x=830, y=473)
+pyautogui.write("angelsseq@gmail.com")
 
 pyautogui.press("tab") #tab sempre passa pra próxima aba do formulário
 pyautogui.write("senha123456789")
-pyautogui.click(x=942, y=710)
+pyautogui.click(x=945, y=655)
 time.sleep(1.5)
 
 # Passo 3: Importar base de dados
@@ -55,7 +56,7 @@ linha = 0
 for linha in tabela.index: 
 
     
-    pyautogui.click(x=759, y=369)#selecionar onde
+    pyautogui.click(x=882, y=345)#selecionar onde
 
 
     #código
